@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(248, 208, 133);
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: black;
+    line-height: 1.6;
+}
+
+header{
+    background-color: orange;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+section, article, #Inicio, footer {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff3e0;
+    border-radius: 10px;
+}
+
+ section h2, article h2 {
+    margin-bottom: 15px;
+    color: #d35400;
+}
+
+nav {
+    background-color: #eea70f;
+    padding: 10px;
+    justify-content: center;
+}
+
+/* Flexbox de Menu de Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background-color: #f0a500;
+  padding: 15px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #333;
+}
+
+/*Boton de Inscripción */
+.boton-inscribirse {
+  display: inline-block;
+  background-color: #d35400;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.boton-inscribirse:hover {
+  background-color: #a84300;
+  transform: scale(1.05);
+}
+
+.logo {
+    display: block;
+    margin: 20px auto;
+}
+
+.Inscripcion {
+background-color: #eea70f;
+}
+
+/* Seccion de Preguntas */
+#Preguntas {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fff3e0;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+#Preguntas ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#Preguntas li {
+  margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #d15400;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}

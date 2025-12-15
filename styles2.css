@@ -1,0 +1,113 @@
+/* Sección de Experiencia del alumnado */
+#Experiencia {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff3e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#Experiencia h2 {
+  text-align: center;
+  color: #d35400;
+  margin-bottom: 25px;
+}
+
+/* Flexbox de Reseñas */
+.reseñas {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap; 
+}
+
+/* Cada tarjeta individual */
+.tarjeta {
+  background-color: #ffe6b3;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  
+}
+
+.tarjeta h3 {
+  color: #d35400;
+  margin-bottom: 10px;
+}
+
+.tarjeta p {
+  font-style: italic;
+  color: #333;
+}
+
+/*Flexbox de Inicio */
+#Inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff3e0;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/*Grid de Idiomas*/
+.grid-idiomas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.idioma {
+  background-color: #fff3e0;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.idioma:hover {
+  transform: translateY(-5px);
+}
+
+.idioma img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.6em;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .boton-inscribirse {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .tarjeta {
+    width: 90%;
+  }
+}
