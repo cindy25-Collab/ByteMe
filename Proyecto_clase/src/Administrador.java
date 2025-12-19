@@ -14,8 +14,6 @@ public class Administrador
 				+ "4 Borrar algun dato o usuario\n"
 				+ "5 salir");
 		
-		//hola mundo
-		
 		int opciones = scanner.nextInt();
 		
 		while (opciones < 1 || opciones > 5)
@@ -56,3 +54,4 @@ public class Administrador
 	}
 
 }
+
