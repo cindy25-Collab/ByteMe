@@ -18,7 +18,7 @@ public class Asignacion_de_clases_profesor
         //aqui han habido modificaciones
         
         ArrayList<String> textos = new ArrayList<>();
-        sleijfvwejfwoñ
+        //he tenido que borrar el archivo para rehacerlo con arraylist
         
 
     }
