@@ -69,19 +69,17 @@ public class bajaProfesor {
             }
         }
 
+
         if (!encontrado) 
         {
             System.out.println("Profesor no encontrado.");
         }
 
-        // Mostrar resultado final
+        // Aqui mostramos el resultado final
         System.out.println("Profesores actuales:");
-        for (int i = 0; i < Profesor.length; i++) 
+        for (int i = 0; i < Profesor.size(); i++) 
         {
-            if (Profesor[i] != null) 
-            {
-                System.out.println("- " + Profesor[i]);
-            }
+            System.out.println("- " + Profesor.get(i));
         }
 
         System.out.println("Antiguos Profesores:");
