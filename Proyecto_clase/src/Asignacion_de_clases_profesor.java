@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Asignacion_de_clases_profesor 
@@ -11,16 +12,15 @@ public class Asignacion_de_clases_profesor
         String maestria2 = profesor.getMaestria2();
         String maestria3 = profesor.getMaestria3();
         String maestria4 = profesor.getMaestria4();
+        
+        //hola mundo
+        
+        //aqui han habido modificaciones
+        
+        ArrayList<String> textos = new ArrayList<>();
+        sleijfvwejfwoñ
+        
 
-        String[] textos = new String[3];
-        textos[0] = "CURSO DE EUSKERA DE NIVEL PRINCIPIANTE con apoyo de " + maestria2 + maestria3 + maestria4;
-        textos[1] = "CURSO DE EUSKERA DE NIVEL INTERMEDIO"  + maestria2 + maestria3 + maestria4;
-        textos[2] = "CURSO DE EUSKERA DE NIVEL AVANZADO con apoyo de "  + maestria2 + maestria3 + maestria4;
-
-        Random rand = new Random();
-        int azar = rand.nextInt(3); // 0 1  2
-
-        System.out.println("Usted impartira clases en el: " + textos[azar]);
     }
 }
 
