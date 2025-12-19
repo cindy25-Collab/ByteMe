@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Administrador 
 {
+	//este archivo esta corregido y listo para insertar en el proyecto de github
 	Scanner scanner = new Scanner (System.in);
 	public void admin()
 	{
@@ -54,4 +55,3 @@ public class Administrador
 	}
 
 }
-
