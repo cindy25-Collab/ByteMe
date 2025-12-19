@@ -1,102 +1,91 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class bajaAlumno {
     Scanner scanner = new Scanner(System.in);
 
-    //aqui hay que hacer unos cambios, hay que implementar arraylist y quiza alfunas cosas mas
     public void bajaalumno() 
     {
         // Lista de alumnos actuales
-        String[] Alumno = new String[4];
-        Alumno[0] = "Samay";
-        Alumno[1] = "Cindy";
-        Alumno[2] = "Ethan";
+        ArrayList<String> Alumno = new ArrayList<>();
+        Alumno.add("Samay");
+        Alumno.add("Cindy");
+        Alumno.add("Ethan");
 
-        String[] antiguos = new String[Alumno.length];
-        // para guardar los dados de baja
-        
-        // Rellenar el espacio vacío
-        for (int i = 0; i < Alumno.length; i++) 
+        // Lista de antiguos alumnos (dados de baja)
+        ArrayList<String> antiguos = new ArrayList<>();
+
+        // Rellenar el espacio vacío (misma idea que antes)
+        if (Alumno.size() < 4) 
         {
-            if (Alumno[i] == null) {
-                System.out.print("Ingrese su nombre por favor: ");
-                Alumno[i] = scanner.nextLine();
-                break; // solo rellenamos un hueco
-            }
+            System.out.print("Ingrese su nombre por favor: ");
+            Alumno.add(scanner.nextLine());
         }
 
         System.out.println("Alumnos actuales:");
-        for (int i = 0; i < Alumno.length; i++) 
+        for (int i = 0; i < Alumno.size(); i++) 
         {
-            if (Alumno[i] != null) {
-                System.out.println("- " + Alumno[i]);
-            }
+            System.out.println("- " + Alumno.get(i));
         }
 
         System.out.println("¿Estas seguro que quieres darte de baja?\n"
-        		+ "1 si\n"
-        		+ "2 no");
+                + "1 si\n"
+                + "2 no");
         int decision = scanner.nextInt();
         
-        while (decision <1 || decision > 2)
+        while (decision < 1 || decision > 2)
         {
-        	System.out.println("Elije bien");
-        	decision = scanner.nextInt();
+            System.out.println("Elije bien");
+            decision = scanner.nextInt();
         }
         
         switch (decision)
         {
         case 1:
-        
-        	scanner.nextLine();
-        // Ahora pedimos el nombre del alumno que se dará de baja
-        System.out.print("Ingrese el nombre del alumno a dar de baja: ");
-        String nombre = scanner.nextLine();
-        
+            scanner.nextLine();
 
-        boolean encontrado = false;
+            // Pedimos el nombre del alumno que se dará de baja
+            System.out.print("Ingrese el nombre del alumno a dar de baja: ");
+            String nombre = scanner.nextLine();
 
-        // Buscar el alumno y darlo de baja
-        for (int i = 0; i < Alumno.length; i++) 
-        {
-            if (Alumno[i] != null && Alumno[i].equalsIgnoreCase(nombre)) 
+            boolean encontrado = false;
+
+            // Buscar el alumno y darlo de baja
+            for (int i = 0; i < Alumno.size(); i++) 
             {
-                antiguos[i] = Alumno[i]; // mover al historial
-                
-                Alumno[i] = null;        // eliminar del array principal
-                encontrado = true;
-                System.out.println(nombre + " fue dado de baja.");
-                break;
+                if (Alumno.get(i).equalsIgnoreCase(nombre)) 
+                {
+                    antiguos.add(Alumno.get(i)); // mover al historial
+                    Alumno.remove(i);             // eliminar de la lista
+                    encontrado = true;
+                    System.out.println(nombre + " fue dado de baja.");
+                    break;
+                }
             }
-        }
 
-        if (!encontrado) 
-        {
-            System.out.println("Alumno no encontrado.");
-        }
-
-        // Mostrar resultado final
-        System.out.println("Alumnos actuales:");
-        for (int i = 0; i < Alumno.length; i++) 
-        {
-            if (Alumno[i] != null) 
+            if (!encontrado) 
             {
-                System.out.println("- " + Alumno[i]);
+                System.out.println("Alumno no encontrado.");
             }
-        }
 
-        System.out.println("Antiguos alumnos:");
-        for (int i = 0; i < antiguos.length; i++) 
-        {
-            if (antiguos[i] != null) 
+            // Mostrar resultado final
+            System.out.println("Alumnos actuales:");
+            for (int i = 0; i < Alumno.size(); i++) 
             {
-                System.out.println(antiguos[i]);
+                System.out.println("- " + Alumno.get(i));
             }
-        }
-       break; 
+
+            System.out.println("Antiguos alumnos:");
+            for (int i = 0; i < antiguos.size(); i++) 
+            {
+                System.out.println(antiguos.get(i));
+            }
+            break;
+
         case 2:
-        	System.out.println("Vuelva pronto");
-        	break;
-    }
+            System.out.println("Vuelva pronto");
+            break;
+        }
     }
 }
+
