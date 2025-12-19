@@ -1,6 +1,8 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
+//no olviden importar el arraylist, a mi sin querer me dio problemas.
+
 public class bajaAlumno {
     Scanner scanner = new Scanner(System.in);
 
@@ -11,6 +13,9 @@ public class bajaAlumno {
         Alumno.add("Samay");
         Alumno.add("Cindy");
         Alumno.add("Ethan");
+        
+        //si alguien puede, que cambie los nombres de esta lista
+        //son los mismos que en otro archivo y nos podemos confundir
 
         // Lista de antiguos alumnos (dados de baja)
         ArrayList<String> antiguos = new ArrayList<>();
