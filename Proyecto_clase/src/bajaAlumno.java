@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class bajaAlumno {
     Scanner scanner = new Scanner(System.in);
 
+    //aqui hay que hacer unos cambios, hay que implementar arraylist y quiza alfunas cosas mas
     public void bajaalumno() 
     {
         // Lista de alumnos actuales
