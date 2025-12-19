@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Registro_curso {
 
@@ -13,154 +14,158 @@ public class Registro_curso {
 
         switch (r) {
             case 1:
-                // Array para guardar los datos del docente
+                // ArrayList para guardar los datos del docente
                 // [0]nombre, [1]primer apellido, [2]segundo apellido, [3]DNI,
                 // [4]fecha nacimiento, [5]género, [6]correo, [7]dirección,
                 // [8]puerta, [9]código identificación, [10]idioma especialización, [11]nivel
-                String[] docente = new String[12];
-                int[] numerosDocente = new int[4]; // [0]teléfono, [1]portal, [2]piso, [3]código postal
+                ArrayList<String> docente = new ArrayList<>();
+                // ArrayList para números del docente
+                // [0]teléfono, [1]portal, [2]piso, [3]código postal
+                ArrayList<Integer> numerosDocente = new ArrayList<>();
 
                 System.out.println("Nombre del docente: ");
-                docente[0] = sc.nextLine();
+                docente.add(sc.nextLine());
 
                 System.out.println("Primer apellido: ");
-                docente[1] = sc.nextLine();
+                docente.add(sc.nextLine());
 
                 System.out.println("Segundo apellido: ");
-                docente[2] = sc.nextLine();
+                docente.add(sc.nextLine());
 
                 System.out.println("DNI/NIE: ");
-                docente[3] = sc.nextLine();
+                docente.add(sc.nextLine());
 
                 System.out.println("Fecha de nacimiento: ");
-                docente[4] = sc.nextLine();
+                docente.add(sc.nextLine());
 
                 System.out.println("Género (H/M): ");
-                docente[5] = sc.nextLine();
+                docente.add(sc.nextLine());
 
                 System.out.println("Dirección de correo electrónico: ");
-                docente[6] = sc.nextLine();
+                docente.add(sc.nextLine());
 
                 System.out.println("Número de teléfono: ");
-                numerosDocente[0] = sc.nextInt();
+                numerosDocente.add(sc.nextInt());
                 sc.nextLine();
 
                 System.out.println("Dirección de domicilio: ");
-                docente[7] = sc.nextLine();
+                docente.add(sc.nextLine());
 
                 System.out.println("Portal: ");
-                numerosDocente[1] = sc.nextInt();
+                numerosDocente.add(sc.nextInt());
 
                 System.out.println("Piso: ");
-                numerosDocente[2] = sc.nextInt();
+                numerosDocente.add(sc.nextInt());
                 sc.nextLine();
 
                 System.out.println("Puerta: ");
-                docente[8] = sc.nextLine();
+                docente.add(sc.nextLine());
 
                 System.out.println("Código postal: ");
-                numerosDocente[3] = sc.nextInt();
+                numerosDocente.add(sc.nextInt());
                 sc.nextLine();
 
                 System.out.println("Ingresa tu código de identificación: ");
-                docente[9] = sc.nextLine();
+                docente.add(sc.nextLine());
 
                 System.out.println("¿Cuál es tu idioma de especialización? ");
-                docente[10] = sc.nextLine();
+                docente.add(sc.nextLine());
 
-                System.out.println("¿Qué nivel de " + docente[10] + " tienes asignado?");
-                docente[11] = sc.nextLine();
+                System.out.println("¿Qué nivel de " + docente.get(10) + " tienes asignado?");
+                docente.add(sc.nextLine());
 
                 System.out.println(" ");
                 System.out.print("Su documentación personal es: \n"
-                        + "Nombre completo: " + docente[1] + " " + docente[2] + " " + docente[0] + "\n"
-                        + "DNI/NIE: " + docente[3] + "\n"
-                        + "Fecha de nacimiento: " + docente[4] + "\n"
-                        + "Género (H/M): " + docente[5] + "\n"
-                        + "Dirección de correo electrónico: " + docente[6] + "\n"
-                        + "Número de teléfono: " + numerosDocente[0] + "\n"
-                        + "Dirección de domicilio: " + docente[7] + "\n"
-                        + "Portal: " + numerosDocente[1] + "\n"
-                        + "Piso: " + numerosDocente[2] + "\n"
-                        + "Puerta: " + docente[8] + "\n"
-                        + "Código Postal: " + numerosDocente[3] + "\n"
-                        + "Código de identificación: " + docente[9] + "\n"
-                        + "Idioma de especialización: " + docente[10] + "\n"
-                        + "Nivel de " + docente[10] + " asignado: " + docente[11] + "\n"
+                        + "Nombre completo: " + docente.get(1) + " " + docente.get(2) + " " + docente.get(0) + "\n"
+                        + "DNI/NIE: " + docente.get(3) + "\n"
+                        + "Fecha de nacimiento: " + docente.get(4) + "\n"
+                        + "Género (H/M): " + docente.get(5) + "\n"
+                        + "Dirección de correo electrónico: " + docente.get(6) + "\n"
+                        + "Número de teléfono: " + numerosDocente.get(0) + "\n"
+                        + "Dirección de domicilio: " + docente.get(7) + "\n"
+                        + "Portal: " + numerosDocente.get(1) + "\n"
+                        + "Piso: " + numerosDocente.get(2) + "\n"
+                        + "Puerta: " + docente.get(8) + "\n"
+                        + "Código Postal: " + numerosDocente.get(3) + "\n"
+                        + "Código de identificación: " + docente.get(9) + "\n"
+                        + "Idioma de especialización: " + docente.get(10) + "\n"
+                        + "Nivel de " + docente.get(10) + " asignado: " + docente.get(11) + "\n"
                         + "¡Hasta Pronto!");
                 break;
 
             case 2:
-                // Array para guardar los datos del alumno
+                // ArrayList para guardar los datos del alumno
                 // [0]nombre, [1]primer apellido, [2]segundo apellido, [3]DNI,
                 // [4]fecha nacimiento, [5]género, [6]correo, [7]dirección,
                 // [8]puerta, [9]idioma nativo, [10]nivel de estudio
-                String[] alumno = new String[11];
-                int[] numerosAlumno = new int[4]; // [0]teléfono, [1]portal, [2]piso, [3]código postal
+                ArrayList<String> alumno = new ArrayList<>();
+                // ArrayList para números del alumno
+                // [0]teléfono, [1]portal, [2]piso, [3]código postal
+                ArrayList<Integer> numerosAlumno = new ArrayList<>();
 
                 System.out.println("Nombre del alumno: ");
-                alumno[0] = sc.nextLine();
+                alumno.add(sc.nextLine());
 
                 System.out.println("Primer apellido: ");
-                alumno[1] = sc.nextLine();
+                alumno.add(sc.nextLine());
 
                 System.out.println("Segundo apellido: ");
-                alumno[2] = sc.nextLine();
+                alumno.add(sc.nextLine());
 
                 System.out.println("DNI/NIE: ");
-                alumno[3] = sc.nextLine();
+                alumno.add(sc.nextLine());
 
                 System.out.println("Fecha de nacimiento: ");
-                alumno[4] = sc.nextLine();
+                alumno.add(sc.nextLine());
 
                 System.out.println("Género (H/M): ");
-                alumno[5] = sc.nextLine();
+                alumno.add(sc.nextLine());
 
                 System.out.println("Dirección de correo electrónico: ");
-                alumno[6] = sc.nextLine();
+                alumno.add(sc.nextLine());
 
                 System.out.println("Número de teléfono: ");
-                numerosAlumno[0] = sc.nextInt();
+                numerosAlumno.add(sc.nextInt());
                 sc.nextLine();
 
                 System.out.println("Dirección de domicilio: ");
-                alumno[7] = sc.nextLine();
+                alumno.add(sc.nextLine());
 
                 System.out.println("Portal: ");
-                numerosAlumno[1] = sc.nextInt();
+                numerosAlumno.add(sc.nextInt());
 
                 System.out.println("Piso: ");
-                numerosAlumno[2] = sc.nextInt();
+                numerosAlumno.add(sc.nextInt());
                 sc.nextLine();
 
                 System.out.println("Puerta: ");
-                alumno[8] = sc.nextLine();
+                alumno.add(sc.nextLine());
 
                 System.out.println("Código postal: ");
-                numerosAlumno[3] = sc.nextInt();
+                numerosAlumno.add(sc.nextInt());
                 sc.nextLine();
 
                 System.out.println("¿Cuál es tu idioma nativo? ");
-                alumno[9] = sc.nextLine();
+                alumno.add(sc.nextLine());
 
                 System.out.println("¿Qué nivel estudiarás? ");
-                alumno[10] = sc.nextLine();
+                alumno.add(sc.nextLine());
 
                 System.out.println(" ");
                 System.out.print("Su documentación personal es: \n"
-                        + "Nombre completo: " + alumno[1] + " " + alumno[2] + " " + alumno[0] + "\n"
-                        + "DNI/NIE: " + alumno[3] + "\n"
-                        + "Fecha de nacimiento: " + alumno[4] + "\n"
-                        + "Género (H/M): " + alumno[5] + "\n"
-                        + "Dirección de correo electrónico: " + alumno[6] + "\n"
-                        + "Número de teléfono: " + numerosAlumno[0] + "\n"
-                        + "Dirección de domicilio: " + alumno[7] + "\n"
-                        + "Portal: " + numerosAlumno[1] + "\n"
-                        + "Piso: " + numerosAlumno[2] + "\n"
-                        + "Puerta: " + alumno[8] + "\n"
-                        + "Código Postal: " + numerosAlumno[3] + "\n"
-                        + "Idioma nativo: " + alumno[9] + "\n"
-                        + "Nivel de estudio: " + alumno[10] + "\n"
+                        + "Nombre completo: " + alumno.get(1) + " " + alumno.get(2) + " " + alumno.get(0) + "\n"
+                        + "DNI/NIE: " + alumno.get(3) + "\n"
+                        + "Fecha de nacimiento: " + alumno.get(4) + "\n"
+                        + "Género (H/M): " + alumno.get(5) + "\n"
+                        + "Dirección de correo electrónico: " + alumno.get(6) + "\n"
+                        + "Número de teléfono: " + numerosAlumno.get(0) + "\n"
+                        + "Dirección de domicilio: " + alumno.get(7) + "\n"
+                        + "Portal: " + numerosAlumno.get(1) + "\n"
+                        + "Piso: " + numerosAlumno.get(2) + "\n"
+                        + "Puerta: " + alumno.get(8) + "\n"
+                        + "Código Postal: " + numerosAlumno.get(3) + "\n"
+                        + "Idioma nativo: " + alumno.get(9) + "\n"
+                        + "Nivel de estudio: " + alumno.get(10) + "\n"
                         + "¡Hasta Pronto!\n");
                 break;
 
@@ -171,4 +176,3 @@ public class Registro_curso {
         sc.close();
     }
 }
-
