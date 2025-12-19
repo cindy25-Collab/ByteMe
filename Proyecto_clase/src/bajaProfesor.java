@@ -1,20 +1,20 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class bajaProfesor {
     Scanner scanner = new Scanner(System.in);
 
     public void bajaprofesor() 
     {
-        // Lista de alumnos actuales
-        String[] Profesor = new String[4];
-        Profesor[0] = "Samay";
-        Profesor[1] = "Cindy";
-        Profesor[2] = "Ethan";
+        // Lista de profesores actuales
+        ArrayList<String> Profesor = new ArrayList<>();
+        Profesor.add("Samay");
+        Profesor.add("Cindy");
+        Profesor.add("Ethan");
 
-        String[] antiguos = new String[Profesor.length];
-        // para guardar los dados de baja
-        
-        // Rellenar el espacio vacío
+        // Lista de antiguos profesores (dados de baja)
+        ArrayList<String> antiguos = new ArrayList<>();
+
         for (int i = 0; i < Profesor.length; i++) 
         {
             if (Profesor[i] == null) {
