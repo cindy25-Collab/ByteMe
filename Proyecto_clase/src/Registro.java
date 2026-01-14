@@ -41,6 +41,6 @@ public class Registro
        }
        
        System.out.println("Gracias por todo, vuelva pronto : D");
-       
+     scanner.close();
     }
 }

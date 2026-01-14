@@ -37,5 +37,6 @@ public class seguimiento
 									+ "Participacion: " + participacion + "\n"
 											+ "Actividades: " + actividades + "\n"
 													+ "Rendimiento: " + rendimiento);
+	sc.close();
 }
 }
