@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class Administrador 
+
+ //hola
 {
 	//este archivo esta corregido y listo para insertar en el proyecto de github
 	Scanner scanner = new Scanner (System.in);
