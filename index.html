@@ -4,54 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AEK</title>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles2.css">
+
 </head>
 <body>
     
     <header><h1>Escuela de Idiomas</h1>
     </header>
+
     <!--Menu de navegación-->
-    <nav>
-        <ul>
-            <li> <a href=#Inicio>Inicio</a></li>
-            <li><a href="idiomas.html" target="_blank">Idiomas</a></li>
-            <li><a href=#Preguntas>Preguntas Frecuentes</a></li>
-            <li><a href="Experiencia.html" target="_blank">Experiencia del alumnado</a></li>
-            <li><a href="servicios.html" target="_blank">Servicios</a></li>
-            <li><a href=#Contacto>Contacto</a></li>
-        </ul>
-    </nav>
-
-    <div id="Inicio">
-       <p> AEK trabaja en la normalización de la lengua vasca, y desarrolla su labor en todos los campos necesarios para ello: en el conocimiento, en el uso y en la promoción del idioma.</p>
-        <a href="formulario.html" target="_blank" class="boton-inscribirse">Inscribirse ahora</a>
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm bg-custom">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">AEK</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="#Inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="idiomas.html">Idiomas</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="Experiencia.html">Experiencia</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="servicios.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="formulario.html">Inscripción</a></li>
+            </ul>
+        </div>
     </div>
-    <br>
+</nav>
+
+<section id="Inicio" class="container my-5 text-center p-5 rounded shadow-sm bg-white">
+    <p class="lead">AEK trabaja en la normalización de la lengua vasca, y desarrolla su labor en todos los campos necesarios para ello: en el conocimiento, en el uso y en la promoción del idioma.</p>
+<a href="formulario.html" class="btn btn-lg fw-bold text-white mt-3 bg-custom2">Inscribirse ahora</a>
     <img class="logo" src="https://www.aek.eus/images/aek-gune-segurua.png" alt="Imagen del logo AEK" width="500">
-<br>
-    
 
-    <br>
+</section>
 
-    <section id="Preguntas">
-        <h2>Preguntas Frecuentes</h2>
-    <ul>
-        <li>
-            <b>¿Qué es AEK?</b>
-            <p>Es una organización del País Vasco fundada en 1976 dedicada a la enseñanza y promoción del euskera (idioma vasco) entre adultos, ofreciendo cursos presenciales y online.</p>
-        </li>
-        <li>
-            <b>¿En qué horarios se imparten los cursos?</b>
-            <p>Los cursos se imparten tanto por la tarde como por la noche para adaptarse a las diferentes necesidades y horarios de los estudiantes.</p>
-        </li>
-        <li>
-            <b>¿Cuánto cuestan los cursos?</b>
-            <p>Los cursos de nivel principiante cuestan 100€ al mes, los de nivel medio 120€ al mes y los de nivel avanzado 150€ al mes.</p>
-        </li>
-    </ul>
-    </section>
+<section id="Preguntas" class="container my-5">
+    <h2 class="text-center mb-4 text-custom">Preguntas Frecuentes</h2>
+    <div class="accordion" id="accordionFAQ">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                    ¿Qué es AEK? 
+                </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                    Es una organización del País Vasco fundada en 1976 dedicada a la enseñanza y promoción del euskera...
+                </div>
+            </div>
+        </div>
 
+        <div class="accordion-item">
+            <h2 class="accordion-header">            
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                    ¿En qué horario se imparten las clases? 
+                </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                    Los cursos se imparten tanto por la tarde como por la noche para adaptarse a las necesidades de los estudiantes.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                    ¿Cuánto cuestan los cursos?
+                </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                    Los cursos de nivel principiante cuestan 100€ al mes, los de nivel medio 120€ al mes y los de nivel avanzado 150€ al mes.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
     <footer id="Contacto">
         <h2>Contacto</h2>
         <p>+34 650576894</p>
@@ -59,5 +93,7 @@
         <p>byteMe@plaiaundi.com</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js.js"></script>
 </body>
 </html>

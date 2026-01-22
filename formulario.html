@@ -4,58 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario de Inscripción</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles2.css">
+
 </head>
 <body>
   
-  <nav>
-        <ul>
-            <li> <a href="index.html">Inicio</a></li>
-            <li><a href="idiomas.html" target="_blank">Idiomas</a></li>
-            <li><a href="index.html">Preguntas Frecuentes</a></li>
-            <li><a href="Experiencia.html" target="_blank">Experiencia del alumnado</a></li>
-            <li><a href="servicios.html" target="_blank">Servicios</a></li>
-            <li><a href="index.html">Contacto</a></li>
-        </ul>
-    </nav>
+ <nav class="navbar navbar-expand-lg navbar-dark shadow-sm bg-custom">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">AEK</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="idiomas.html">Idiomas</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="Experiencia.html">Experiencia</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="servicios.html">Servicios</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-
-<section id="Inscripcion">
-  <h2>Formulario de Inscripción</h2>
-
-  <form action="#" method="post" class="formulario">
-    <label for="nombre">Nombre completo:</label>
-    <input type="text" id="nombre" name="nombre" required><br><br>
-
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <label for="telefono">Teléfono:</label>
-    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" placeholder="Ej: 600123456" required><br><br>
-
-    <label for="idioma">Idioma nativo</label>
-    <select id="idioma" name="idioma" required>
-      <option value="">--Selecciona un idioma--</option>
-      <option value="euskera">Euskera</option>
-      <option value="ingles">Inglés</option>
-      <option value="castellano">Castellano</option>
-      <option value="algun otro">Algun otro</option>
-    </select><br><br>
-
-    <label for="nivel">Nivel actual:</label>
-    <select id="nivel" name="nivel">
-      <option value="">--Selecciona tu nivel--</option>
-      <option value="principiante">Principiante</option>
-      <option value="intermedio">Intermedio</option>
-      <option value="avanzado">Avanzado</option>
-    </select><br><br>
-
-    <label for="comentarios">Comentarios adicionales:</label><br>
-    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Cuéntanos tus objetivos o disponibilidad..."></textarea><br><br>
-
-    <button type="submit">Enviar inscripción</button>
-  </form>
+<section id="Inscripcion" class="container my-5 p-4 bg-white shadow rounded">
+    <h2 class="text-center mb-4 text-custom">Formulario de Inscripción</h2>
+    <form id="registroForm" class="needs-validation" novalidate>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre completo:</label>
+                <input type="text" class="form-control" id="nombre" required>
+                <div class="invalid-feedback">Por favor, introduce tu nombre.</div>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Correo electrónico:</label>
+                <input type="email" class="form-control" id="email" required placeholder="ejemplo@gmail.com">
+            </div>
+            <div class="col-md-6">
+                <label for="telefono" class="form-label">Teléfono:</label>
+                <input type="tel" class="form-control" id="telefono" pattern="[0-9]{9}" required>
+            </div>
+            <div class="col-md-6">
+                <label for="nivel" class="form-label">Nivel actual:</label>
+                <select id="nivel" class="form-select" required>
+                    <option value="">--Selecciona tu nivel--</option>
+                    <option value="principiante">Principiante</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="avanzado">Avanzado</option>
+                </select>
+            </div>
+            <div id="contenedorPrecio" class="col-12 d-none">
+                <div class="alert alert-info fw-bold" id="textoPrecio"></div>
+            </div>
+            <div class="col-12">
+                <label for="comentarios" class="form-label">Comentarios:</label>
+                <textarea class="form-control" id="comentarios" rows="3"></textarea>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn text-white w-100 fw-bold bg-custom2">Enviar inscripción</button>
+            </div>
+        </div>
+    </form>
 </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js.js"></script>
+
 </body>
 </html>

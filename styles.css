@@ -31,7 +31,6 @@ section, article, #Inicio, footer {
 }
 
 nav {
-    background-color: #eea70f;
     padding: 10px;
     justify-content: center;
 }
@@ -59,7 +58,6 @@ nav ul li a:hover {
 /*Boton de Inscripción */
 .boton-inscribirse {
   display: inline-block;
-  background-color: #d35400;
   color: white;
   text-decoration: none;
   padding: 12px 25px;
@@ -69,7 +67,6 @@ nav ul li a:hover {
 }
 
 .boton-inscribirse:hover {
-  background-color: #a84300;
   transform: scale(1.05);
 }
 
@@ -106,4 +103,31 @@ footer {
     color: white;
     padding: 20px;
     border-radius: 10px;
+}
+
+.bg-custom {
+    background-color: #eea70f;
+}
+.bg-custom1 {
+  background-color: #eea70f;
+}
+
+.bg-custom2 {
+  background-color: #d35400;
+}
+
+.bg-custom1:hover {
+    background-color: #d8960d !important; 
+    color: white !important;
+    border-color: #d8960d !important;
+}
+
+.bg-custom2:hover {
+    background-color: #a84300 !important; 
+    color: white !important;
+    border-color: #a84300 !important;
+}
+
+text.custom {
+  color: #d35400;
 }
