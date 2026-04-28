@@ -113,7 +113,8 @@ footer {
 }
 
 .bg-custom2 {
-  background-color: #d35400;
+  --bs-table-bg: #d35400;
+  background-color: #d35400 !important;
 }
 
 .bg-custom1:hover {

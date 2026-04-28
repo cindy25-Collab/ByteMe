@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="cursos.xslt" type="text/xsl"?>
+
+<cursos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="Cursos.xsd">
+
+    <curso DNIprofe="15928473R" ID="101">
+        <Horario>12:30</Horario>
+        <idioma>Euskera</idioma>
+        <NivelDificultad>Básico</NivelDificultad>
+        <ProgEstudios progreso="creditos">100</ProgEstudios>
+    </curso>
+
+    <curso DNIprofe="48736291M" ID="25">
+        <Horario>15:30</Horario>
+        <idioma>Español</idioma>
+        <NivelDificultad>Intermedio</NivelDificultad>
+        <ProgEstudios progreso="creditos">50</ProgEstudios>
+    </curso>
+
+    <curso DNIprofe="90217463A" ID="7">
+        <Horario>19:30</Horario>
+        <idioma>Inglés</idioma>
+        <NivelDificultad>Avanzado</NivelDificultad>
+        <ProgEstudios progreso="creditos">75</ProgEstudios>
+    </curso>
+
+    <curso DNIprofe="36182947Z" ID="300">
+        <Horario>14:30</Horario>
+        <idioma>Euskera</idioma>
+        <NivelDificultad>Intermedio</NivelDificultad>
+        <ProgEstudios progreso="creditos">20</ProgEstudios>
+    </curso>
+
+    <curso DNIprofe="74829165H" ID="1">
+        <Horario>20:30</Horario>
+        <idioma>Español</idioma>
+        <NivelDificultad>Básico</NivelDificultad>
+        <ProgEstudios progreso="creditos">10</ProgEstudios>
+    </curso>
+
+</cursos>

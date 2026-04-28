@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="profesor.xslt" type="text/xsl"?>
+
+<profesores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="profesor.xsd">
+
+    <profesor dni="48273615L" fechContratacion="2019-03-12">
+        <nombre>Pepe</nombre>
+        <apellidos>Perez Rodriguez</apellidos>
+        <numTel>612477839</numTel>
+        <correoElec>pepeperez@gmail.com</correoElec>
+        <fecNacimiento>1999-02-28</fecNacimiento>
+        <domicilio>Donostia</domicilio>
+        <codPost>20001</codPost>
+    </profesor>
+
+    <profesor dni="57382910M" fechContratacion="2020-06-25">
+        <nombre>Maria</nombre>
+        <apellidos>Garcia Lopez</apellidos>
+        <numTel>612345678</numTel>
+        <correoElec>maria.garcia@gmail.com</correoElec>
+        <fecNacimiento>1985-07-15</fecNacimiento>
+        <domicilio>Bilbao</domicilio>
+        <codPost>48001</codPost>
+    </profesor>
+
+    <profesor dni="68492037N" fechContratacion="2018-11-05">
+        <nombre>Juan</nombre>
+        <apellidos>Martinez Sanchez</apellidos>
+        <numTel>698765432</numTel>
+        <correoElec>juan.martinez@gmail.com</correoElec>
+        <fecNacimiento>1980-11-30</fecNacimiento>
+        <domicilio>San Sebastian</domicilio>
+        <codPost>20002</codPost>
+    </profesor>
+
+    <profesor dni="79503148O" fechContratacion="2021-01-15">
+        <nombre>Ana</nombre>
+        <apellidos>Lopez Fernandez</apellidos>
+        <numTel>612334455</numTel>
+        <correoElec>ana.lopez@gmail.com</correoElec>
+        <fecNacimiento>1990-05-20</fecNacimiento>
+        <domicilio>Madrid</domicilio>
+        <codPost>28001</codPost>
+    </profesor>
+
+    <profesor dni="80614259P" fechContratacion="2017-09-30">
+        <nombre>Carlos</nombre>
+        <apellidos>Gomez Ruiz</apellidos>
+        <numTel>699887766</numTel>
+        <correoElec>carlos.gomez@gmail.com</correoElec>
+        <fecNacimiento>1988-09-10</fecNacimiento>
+        <domicilio>Barcelona</domicilio>
+        <codPost>08001</codPost>
+    </profesor>
+
+</profesores>

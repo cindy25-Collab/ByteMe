@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="alumnos.xslt" type="text/xsl"?>
+
+<alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Alumnos.xsd">
+    <alumno dni="29481736M" fechaNacimiento="2008-12-31" domicilio="Calle Sierra Alta 7"
+    codigoPostal="41013" idiomaNativo="Frances" dniProfesor="87239164G">
+        <nombre>David</nombre>
+        <apellidos>Rodríguez Sánchez</apellidos>
+        <numeroTelefono>698274153</numeroTelefono>
+        <correoElectronico>davidrodrigez@gmail.com</correoElectronico>
+    </alumno>
+     <alumno dni="76391248F" fechaNacimiento="2005-06-18" domicilio="Plaza del Molino 4"
+     codigoPostal="50018" idiomaNativo="Árabe" dniProfesor="58120397T">
+        <nombre>María</nombre>
+        <apellidos>Hernández Gómez</apellidos>
+        <numeroTelefono>677345981</numeroTelefono>
+        <correoElectronico>mariahernandez@gmail.com</correoElectronico>
+    </alumno>
+     <alumno dni="43057628C" fechaNacimiento="2007-01-11" domicilio="Calle Camino Real 77"
+     codigoPostal="33009" idiomaNativo="Español" dniProfesor="48273615L">
+        <nombre>Ana</nombre>
+        <apellidos>Fernández Ruiz</apellidos>
+        <numeroTelefono>698451273</numeroTelefono>
+        <correoElectronico>anafernandez@gmail.com</correoElectronico>
+    </alumno>
+     <alumno dni="61748290K" fechaNacimiento="2006-01-27" domicilio="Avenida del Parque 101"
+     codigoPostal="45005" idiomaNativo="Inglés" dniProfesor="15928473R">
+        <nombre>Pablo</nombre>
+        <apellidos>Gómez Romero</apellidos>
+        <numeroTelefono>612873945</numeroTelefono>
+        <correoElectronico>pablogomez@gmail.com</correoElectronico>
+    </alumno>
+     <alumno dni="48392015R" fechaNacimiento="2008-04-12" domicilio="Calle Roble 18, 3ºA"
+     codigoPostal="28027" idiomaNativo="Japonés" dniProfesor="15928473R">
+        <nombre>Laura</nombre>
+        <apellidos>Martínez Gómez</apellidos>
+        <numeroTelefono>612345789</numeroTelefono>
+        <correoElectronico>lauramartinez@gmail.com</correoElectronico>
+    </alumno>
+</alumnos>
